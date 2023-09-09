@@ -56,15 +56,6 @@ mvn spring:run
 | GET      | `/product/search/{query}`              | Busca product basándose en un término de búsqueda. |
 | DELETE   | `/product/delete-by-name/{name}`       | Elimina product su nombre.  |
 
-Esta tabla incluye todos los endpoints relacionados con productos y sus respectivas descripciones.
-
-| Campo           | Descripción                                     |
-|-----------------|-------------------------------------------------|
-| `id`            | Identificador único del producto.               |
-| `name`          | Nombre del producto.                            |
-| `description`   | Descripción detallada del producto.             |
-| `price`         | Precio del producto en unidades monetarias.     |
-
 
 - **Obtener todos los Product:** `Endpoint: GET /product/all`
   
@@ -233,7 +224,12 @@ Esta tabla incluye todos los endpoints relacionados con productos y sus respecti
     }
     ```
 
-
+| Campo           | Descripción                                     |
+|-----------------|-------------------------------------------------|
+| `id`            | Identificador único del producto.               |
+| `name`          | Nombre del producto.                            |
+| `description`   | Descripción detallada del producto.             |
+| `price`         | Precio del producto en unidades monetarias.     |
 
 
 ## Recursos Adicionales
