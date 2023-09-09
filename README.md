@@ -45,17 +45,16 @@ mvn spring:run
 - [http://localhost:2023](http://localhost:2023)
 
 ## API Endpoints 
-Mis disculpas por omitir esos dos endpoints en la tabla anterior. Aquí tienes la tabla actualizada que incluye todos los endpoints relacionados con productos:
 
 | Método   | Endpoint                               | Descripción                                |
 |----------|----------------------------------------|--------------------------------------------|
-| GET      | `/product/list`                        | Obtiene una lista de todos los productos en la tienda.  |
+| GET      | `/product/list`                        | Obtiene una lista de  productos  |
 | GET      | `/product/{id}`                        | Obtiene información detallada de un solo producto por su ID.        |
-| POST     | `/product/add`                         | Crea y guarda un nuevo producto en la tienda.     |
+| POST     | `/product/create`                      | Crea y guarda un nuevo product.     |
 | PUT      | `/product/update/{id}`                 | Actualiza un producto existente por su ID. |
 | DELETE   | `/product/delete/{id}`                 | Elimina un producto por su ID.             |
-| GET      | `/product/search/{query}`              | Busca productos en la tienda basándose en un término de búsqueda. |
-| DELETE   | `/product/delete-by-name/{name}`       | Elimina productos de la tienda por su nombre.  |
+| GET      | `/product/search/{query}`              | Busca product basándose en un término de búsqueda. |
+| DELETE   | `/product/delete-by-name/{name}`       | Elimina product su nombre.  |
 
 Esta tabla incluye todos los endpoints relacionados con productos y sus respectivas descripciones.
 
