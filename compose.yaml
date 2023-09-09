@@ -1,0 +1,18 @@
+services:
+  mongodb:
+    image: 'mongodb/mongodb-community-server'
+    container_name: 'mongodb'
+    restart: 'always'
+    volumes:
+      - 'data:/mongodb/db'
+    environment:
+      - 'MONGO_INITDB_DATABASE=crud'
+      - 'MONGO_INITDB_ROOT_PASSWORD=12345'
+      - 'MONGO_INITDB_ROOT_USERNAME=user'
+    ports:
+      - '20400:27017'
+
+
+
+volumes:
+  data:
