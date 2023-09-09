@@ -149,7 +149,7 @@ mvn spring:run
     ```json
     {
       {
-        "message": "Producto guardado exitosamente",
+        "message": "product saved successfully",
         "code": 201,
         "status": "CREATED",
         "timestamp": "2023-09-08 22:45:56"
@@ -161,7 +161,7 @@ mvn spring:run
     ```json
     {
       {
-        "message": "Producto actualizado exitosamente",
+        "message": "product updated successfully",
         "code": 209,
         "status": "OK",
         "timestamp": "2023-09-08 22:24:43"
@@ -169,7 +169,7 @@ mvn spring:run
     }
     ```
 - **Buscar Product por Término:** `Endpoint: GET /product/search/{query}`
-  - Ejemplo de Solicitud: GET /product/search/Piedra%20filosofal
+  - Ejemplo de Solicitud: `GET /product/search/Piedra%20filosofal`
   - Respuesta Exitosa (200 OK)
     ```json
     {
@@ -183,3 +183,29 @@ mvn spring:run
       ]
     }
     ```
+
+- **Eliminar Product por Nombre:** `Endpoint: DELETE /product/delete-by-name/{productName}`
+  - Respuesta Exitosa (204 No Content)
+    ```json
+    {
+      {
+        "message": "product deleted successfully",
+        "code": 204,
+        "status": "NO_CONTENT",
+        "timestamp": "2023-09-08 22:46:13"
+      }
+    }
+    ```
+- **Eliminar Product por ID:** `Endpoint: DELETE /product/delete/{productId}`
+  - Respuesta Exitosa (204 No Content)
+    ```json
+    {
+      {
+        "message": "product deleted successfully",
+        "code": 204,
+        "status": "NO_CONTENT",
+        "timestamp": "2023-09-08 23:55:49"
+      }
+    }
+    ```
+
