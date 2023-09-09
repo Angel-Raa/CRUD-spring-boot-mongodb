@@ -169,6 +169,18 @@ Esta tabla incluye todos los endpoints relacionados con productos y sus respecti
     }
     ```
 - **Actualizar un Product:** `Endpoint: PUT /product/update/{productId}`
+     - Parámetros:
+        - `{id}`: ID del producto a actualizar
+    - Cuerpo de la solicitud:
+        ```json
+        {
+           {
+              "name": "Poción de amor",
+              "description": "Una poción que hace que el usuario sea irresistible para el objeto de su afecto.",
+              "price": 1000000
+          }
+        }
+        ```
   - Respuesta Exitosa (200 OK)
     ```json
     {
