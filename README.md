@@ -40,6 +40,81 @@ mvn clean package
 mvn spring:run
 
 ```
+## Base URL
+
+- [http://localhost:2023](http://localhost:2023)
+
+## API Endpoints 
+
+- **Obtener todos los Product:** `Endpoint: GET /product/all`
+  
+  - Respuesta Exitosa (200 OK)
+    ```json
+    {
+    [
+      {
+          "id": "64fbdb822d4bb819ba62ac98",
+          "name": "Poción de la invisibilidad",
+          "description": "Una poción mágica que hace que el usuario sea invisible.",
+          "price": 100000
+      },
+      {
+          "id": "64fbdbaa2d4bb819ba62ac99",
+          "name": "Capa de invisibilidad",
+          "description": "Una capa que hace que el usuario sea invisible.",
+          "price": 50000
+      },
+      {
+          "id": "64fbdbb42d4bb819ba62ac9a",
+          "name": "Escoba voladora",
+          "description": "Una escoba que permite al usuario volar.",
+          "price": 10000
+      },
+      {
+          "id": "64fbdbbe2d4bb819ba62ac9b",
+          "name": "Piedra filosofal",
+          "description": "Una piedra que permite al usuario convertir cualquier metal en oro y otorgar la vida eterna.",
+          "price": 1000000000
+      },
+      {
+          "id": "64fbdbe02d4bb819ba62ac9c",
+          "name": "Teletransportador",
+          "description": "Un dispositivo que permite al usuario viajar de un lugar a otro instantáneamente.",
+          "price": 100000
+      },
+      {
+          "id": "64fbdbef2d4bb819ba62ac9d",
+          "name": "Clonador",
+          "description": "Un dispositivo que permite al usuario crear un clon exacto de sí mismo.",
+          "price": 500000
+      },
+      {
+          "id": "64fbdc0d2d4bb819ba62ac9e",
+          "name": "Máquina del tiempo",
+          "description": "Un dispositivo que permite al usuario viajar en el tiempo.",
+          "price": 1000000
+      },
+      {
+          "id": "64fbdc402d4bb819ba62ac9f",
+          "name": "Súper traje",
+          "description": "Un traje que otorga al usuario superpoderes, como la fuerza, la velocidad y la invulnerabilidad.",
+          "price": 100000
+      },
+      {
+          "id": "64fbdc642d4bb819ba62aca0",
+          "name": "Poción de amor",
+          "description": "Una poción que hace que el usuario sea irresistible para el objeto de su afecto.",
+          "price": 1000000
+        }
+    ]
+
+    }
+    ```
+  
+
+
+
+
 
 
 
