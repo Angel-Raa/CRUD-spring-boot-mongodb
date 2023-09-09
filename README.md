@@ -45,6 +45,19 @@ mvn spring:run
 - [http://localhost:2023](http://localhost:2023)
 
 ## API Endpoints 
+Mis disculpas por omitir esos dos endpoints en la tabla anterior. Aquí tienes la tabla actualizada que incluye todos los endpoints relacionados con productos:
+
+| Método   | Endpoint                               | Descripción                                |
+|----------|----------------------------------------|--------------------------------------------|
+| GET      | `/product/list`                        | Obtiene una lista de todos los productos en la tienda.  |
+| GET      | `/product/{id}`                        | Obtiene información detallada de un solo producto por su ID.        |
+| POST     | `/product/add`                         | Crea y guarda un nuevo producto en la tienda.     |
+| PUT      | `/product/update/{id}`                 | Actualiza un producto existente por su ID. |
+| DELETE   | `/product/delete/{id}`                 | Elimina un producto por su ID.             |
+| GET      | `/product/search/{query}`              | Busca productos en la tienda basándose en un término de búsqueda. |
+| DELETE   | `/product/delete-by-name/{name}`       | Elimina productos de la tienda por su nombre.  |
+
+Esta tabla incluye todos los endpoints relacionados con productos y sus respectivas descripciones.
 
 | Campo           | Descripción                                     |
 |-----------------|-------------------------------------------------|
@@ -208,4 +221,17 @@ mvn spring:run
       }
     }
     ```
+
+
+
+
+## Recursos Adicionales
+
+Aquí hay algunos recursos adicionales que podrían ser útiles:
+
+
+- [Documentacion de open jdk 17](https://docs.oracle.com/en/java/javase/17/docs/api/)
+- [Documentacion de Spring boot](https://docs.spring.io/spring-boot/docs/current/reference/htmlsingle/)
+- [Documentacion de Spring Data MongoDB](https://spring.io/projects/spring-data-mongodb)
+- [Documentacion de Maven](https://maven.apache.org/guides/getting-started/)
 
