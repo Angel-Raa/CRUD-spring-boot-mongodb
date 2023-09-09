@@ -1,6 +1,6 @@
 # CRUD con Spring Boot y Mongodb
 
-Este proyecto ejemplifica un CRUD (Crear, Leer, Actualizar y Eliminar) fundamental, desarrollada con ava 17, Spring Boot 3 y MongoDB. 
+Este proyecto ejemplifica un CRUD (Crear, Leer, Actualizar y Eliminar) fundamental, desarrollada con Java 17, Spring Boot 3 y MongoDB. 
 
 ## Tecnologías Utilizadas
 
@@ -18,6 +18,30 @@ Asegúrate de tener instalados los siguientes componentes en tu entorno de desar
 - [Maven](https://maven.apache.org/download.cgi)
 - [Java jdk-17](https://www.oracle.com/java/technologies/javase/jdk17-archive-downloads.html)
 - [Docker](https://docs.docker.com/)
+
+## Instrucciones de Uso
+
+Sigue estos pasos para ejecutar la aplicación en tu entorno local:
+
+#### Clonar el repositorio en tu máquina local
+```
+git clone https://github.com/Angel-Raa/CRUD-spring-boot-mongodb.git
+```
+#### Navegar al directorio del proyecto
+```
+cd CRUD-spring-boot-mongodb
+```
+#### Limpia y empaqueta el proyecto utilizando Maven
+```
+mvn clean package
+```
+#### inicia la aplicación Spring Boot
+```
+mvn spring:run
+
+```
+
+
 
 
 
