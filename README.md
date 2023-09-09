@@ -168,5 +168,18 @@ mvn spring:run
       }
     }
     ```
-
-
+- **Buscar Product por Término:** `Endpoint: GET /product/search/{query}`
+  - Ejemplo de Solicitud: GET /product/search/Piedra%20filosofal
+  - Respuesta Exitosa (200 OK)
+    ```json
+    {
+      [
+        {
+          "id": "64fbdbbe2d4bb819ba62ac9b",
+          "name": "Piedra filosofal",
+          "description": "Una piedra que permite al usuario convertir cualquier metal en oro y otorgar la vida eterna.",
+          "price": 1000000000
+        }
+      ]
+    }
+    ```
