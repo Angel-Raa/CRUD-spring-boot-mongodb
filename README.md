@@ -223,6 +223,8 @@ mvn spring:run
     }
     ```
 
+### Campos de Product
+
 | Campo           | Descripción                                     |
 |-----------------|-------------------------------------------------|
 | `id`            | Identificador único del producto.               |
