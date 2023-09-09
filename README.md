@@ -46,6 +46,15 @@ mvn spring:run
 
 ## API Endpoints 
 
+| Campo           | Descripción                                     |
+|-----------------|-------------------------------------------------|
+| `id`            | Identificador único del producto.               |
+| `name`          | Nombre del producto.                            |
+| `description`   | Descripción detallada del producto.             |
+| `price`         | Precio del producto en unidades monetarias.     |
+
+Esta tabla proporciona una descripción de cada campo que se utiliza para representar los productos en tu API.
+
 - **Obtener todos los Product:** `Endpoint: GET /product/all`
   
   - Respuesta Exitosa (200 OK)
@@ -112,8 +121,18 @@ mvn spring:run
     ```
   
 
-
-
+- **Obtener un Product por ID:** `Endpoint: GET /product/{productId}`
+  - Respuesta Exitosa (200 OK)
+    ```json
+    {
+      {
+        "id": "64fbdbb42d4bb819ba62ac9a",
+        "name": "Escoba voladora",
+        "description": "Una escoba que permite al usuario volar.",
+        "price": 10000
+      }
+    }
+    ```
 
 
 
