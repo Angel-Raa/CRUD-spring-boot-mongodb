@@ -38,7 +38,6 @@ mvn clean package
 #### inicia la aplicación Spring Boot
 ```
 mvn spring:run
-
 ```
 ## Base URL
 
