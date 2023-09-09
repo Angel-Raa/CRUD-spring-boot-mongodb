@@ -53,7 +53,6 @@ mvn spring:run
 | `description`   | Descripción detallada del producto.             |
 | `price`         | Precio del producto en unidades monetarias.     |
 
-Esta tabla proporciona una descripción de cada campo que se utiliza para representar los productos en tu API.
 
 - **Obtener todos los Product:** `Endpoint: GET /product/all`
   
@@ -134,9 +133,40 @@ Esta tabla proporciona una descripción de cada campo que se utiliza para repres
     }
     ```
 
+- **Crear un Nuevo Product:** `Endpoint: POST /product/create`
+  - Cuerpo de la solicitud:
+    ```json
+    {
+      {
+        "name": "Poción de amor",
+        "description": "Una poción que hace que el usuario sea irresistible para el objeto de su afecto.",
+        "price": 1000000
 
-
-
-
+      }
+    }
+    ```
+  - Respuesta Exitosa (201 Created)
+    ```json
+    {
+      {
+        "message": "Producto guardado exitosamente",
+        "code": 201,
+        "status": "CREATED",
+        "timestamp": "2023-09-08 22:45:56"
+      }
+    }
+    ```
+- **Actualizar un Product:** `Endpoint: PUT /product/update/{productId}`
+  - Respuesta Exitosa (200 OK)
+    ```json
+    {
+      {
+        "message": "Producto actualizado exitosamente",
+        "code": 209,
+        "status": "OK",
+        "timestamp": "2023-09-08 22:24:43"
+      }
+    }
+    ```
 
 
